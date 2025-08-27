@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         "sky-blue": "#BBCFE3",
+        "ocean-blue": "#2F579B",
       },
     },
   },
