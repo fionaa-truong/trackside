@@ -10,7 +10,9 @@ module.exports = {
       fontFamily: {
         mclaren: ["var(--font-mclaren)", "sans-serif"],
       },
-      colors: {},
+      colors: {
+        "sky-blue": "#BBCFE3",
+      },
     },
   },
   plugins: [
@@ -21,10 +23,10 @@ module.exports = {
           height: "5px",
         },
         "::-webkit-scrollbar-thumb": {
-          backgroundColor: "#d498be",
+          backgroundColor: "#3d4c6e",
         },
         "::-webkit-scrollbar-track": {
-          backgroundColor: "#f0e0e3",
+          backgroundColor: "#c8cede",
         },
         "::-webkit-details-marker": {
           display: "none",
