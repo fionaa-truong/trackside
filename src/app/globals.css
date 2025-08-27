@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #eaedf3;
@@ -14,12 +16,6 @@
   :root {
     --background: #eaedf3;
     --foreground: #000000;
-  }
-}
-
-@layer utilities {
-  .font-mclaren {
-    font-family: var(--font-mclaren), sans-serif;
   }
 }
 

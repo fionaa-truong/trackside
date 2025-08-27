@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        mclaren: ["var(--font-mclaren)", "sans-serif"],
+      },
       colors: {},
     },
   },
