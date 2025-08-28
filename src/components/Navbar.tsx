@@ -15,26 +15,17 @@ export default function navbar() {
       {/** hamburger for small screens and animate to have it coming from the right */}
       <div className="mr-2 flex flex-row items-center justify-between gap-10 lg:gap-16">
         <Link href="/">
-          <span className="hover:text-ocean-blue font-semibold hover:underline">
+          <span className="hover:text-ocean-blue hover:font-semibold">
             Standings
           </span>
         </Link>
-        <Link
-          href="/"
-          className="hover:text-ocean-blue font-semibold hover:underline"
-        >
+        <Link href="/" className="hover:text-ocean-blue hover:font-semibold">
           <span>Projections</span>
         </Link>
-        <Link
-          href="/"
-          className="hover:text-ocean-blue font-semibold hover:underline"
-        >
+        <Link href="/" className="hover:text-ocean-blue hover:font-semibold">
           <span>Circuit Info</span>
         </Link>
-        <Link
-          href="/"
-          className="hover:text-ocean-blue font-semibold hover:underline"
-        >
+        <Link href="/" className="hover:text-ocean-blue hover:font-semibold">
           <span>Upcoming Races</span>
         </Link>
         <Link href="/">
