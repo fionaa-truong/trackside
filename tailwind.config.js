@@ -11,8 +11,10 @@ module.exports = {
         mclaren: ["var(--font-mclaren)", "sans-serif"],
       },
       colors: {
+        "blue-white": "#D1D3E5",
         "sky-blue": "#BBCFE3",
         "ocean-blue": "#2F579B",
+        "moody-grey": "#303030",
       },
     },
   },
@@ -24,10 +26,10 @@ module.exports = {
           height: "5px",
         },
         "::-webkit-scrollbar-thumb": {
-          backgroundColor: "#3d4c6e",
+          backgroundColor: "#8E9FCA",
         },
         "::-webkit-scrollbar-track": {
-          backgroundColor: "#c8cede",
+          backgroundColor: "#3d4c6e",
         },
         "::-webkit-details-marker": {
           display: "none",
