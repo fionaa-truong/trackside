@@ -5,7 +5,7 @@ import Calendar from "./calendar";
 
 export default function TrackList() {
   return (
-    <div className="bg-moody-grey flex h-80 w-[850px] flex-row rounded-lg">
+    <div className="bg-moody-grey flex h-80 w-[850px] flex-row rounded-t-lg">
       <div className="relative h-80 w-80">
         <Image
           src="/landingPage/senna_monaco.png"
