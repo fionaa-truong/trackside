@@ -1,6 +1,6 @@
 export default function RacesCompleted() {
   const totalRaces = 24;
-  const completed = 15; // TODO: make dynamic
+  const completed = 1; // TODO: make dynamic
   const percentage = completed / totalRaces;
 
   // Gauge math
@@ -43,7 +43,6 @@ export default function RacesCompleted() {
   const baseRightX = 130 + (baseThin / 2) * Math.cos(angleRad - Math.PI / 2);
   const baseRightY = 130 - (baseThin / 2) * Math.sin(angleRad - Math.PI / 2);
 
-  //   const ticks = [0, 3, 6, 9, 12, 15, 18, 21, 24];
   const tickInterval = 2;
   const ticks = Array.from(
     { length: totalRaces / tickInterval + 1 },
@@ -74,24 +73,6 @@ export default function RacesCompleted() {
           fill="red"
         />
 
-        {/* {ticks.map((tick) => {
-          const tickAngle = (tick / totalRaces) * Math.PI;
-          const x = 130 + (radiusOuter + 12) * Math.cos(Math.PI - tickAngle);
-          const y = 130 - (radiusOuter + 12) * Math.sin(tickAngle);
-          return (
-            <text
-              key={tick}
-              x={x}
-              y={y}
-              textAnchor="middle"
-              alignmentBaseline="middle"
-              fontSize="14"
-              fill="black"
-            >
-              {tick}
-            </text>
-          );
-        })} */}
         {ticks.map((tick) => {
           const tickAngle = (tick / totalRaces) * Math.PI;
           const x1 = 130 + radiusOuter * Math.cos(Math.PI - tickAngle);
@@ -105,7 +86,6 @@ export default function RacesCompleted() {
 
           return (
             <g key={tick}>
-              {/* Tick line */}
               {tick !== 0 && tick !== totalRaces && (
                 <line
                   x1={x1}
@@ -113,10 +93,10 @@ export default function RacesCompleted() {
                   x2={x2}
                   y2={y2}
                   stroke="black"
-                  strokeWidth={tick % 6 === 0 ? 2 : 1} // thicker at 6, 12, 18
+                  strokeWidth={tick % 6 === 0 ? 2 : 1}
                 />
               )}
-              {/* Label */}
+
               {tick % 6 === 0 && (
                 <text
                   x={labelX}

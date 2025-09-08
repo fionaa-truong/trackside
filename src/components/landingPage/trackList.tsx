@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Calendar from "./calendar";
 
-// TODO: Add now playing for the current/next race
-
 export default function TrackList() {
   return (
-    <div className="bg-moody-grey flex h-80 w-[850px] flex-row rounded-t-lg">
-      <div className="relative h-80 w-80">
+    <div className="bg-moody-grey flex w-[350px] flex-col rounded-t-lg md:h-60 md:w-[750px] md:flex-row lg:h-80 lg:w-[850px]">
+      <div className="relative h-[350px] w-[350px] md:h-60 md:w-60 lg:h-80 lg:w-80">
         <Image
           src="/landingPage/senna_monaco.png"
           alt="Senna in Monaco"
@@ -15,18 +13,25 @@ export default function TrackList() {
         />
       </div>
 
-      <div className="flex flex-1 flex-col items-center">
-        <div className="mt-4 flex flex-row items-start justify-center gap-2">
-          <Image
-            src="/landingPage/f1_white_logo.png"
-            alt="F1 Logo"
-            width={90}
-            height={90}
-            className="object-contain"
-          />
-          <span className="mb-4 mt-2 text-3xl text-white">2025 Track List</span>
+      <div className="-mt-4 flex flex-1 flex-col items-center md:mt-0">
+        <div className="flex flex-row items-start justify-center gap-2">
+          <div className="relative mt-2 h-14 w-14 items-center md:mt-[6px] md:h-16 md:w-16 lg:h-20 lg:w-20">
+            <Image
+              src="/landingPage/f1_white_logo.png"
+              alt="F1 Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          <span className="mb-4 mt-[22px] text-xl text-white md:text-2xl lg:text-3xl">
+            2025 Track List
+          </span>
         </div>
-        <div className="mb-6 overflow-auto">
+        <div
+          className="mx-2 mb-6 flex-1 overflow-y-auto md:mx-0"
+          style={{ maxHeight: "calc(3 * 60px + 1rem)" }}
+        >
           <Calendar
             trackNumber={1}
             circuit="Melbourne Grand Prix Circuit"

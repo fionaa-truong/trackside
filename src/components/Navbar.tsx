@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function navbar() {
   return (
-    <div className="flex w-full flex-row items-center justify-between bg-sky-blue px-5 py-3">
+    <div className="flex w-full flex-row items-center justify-between overflow-x-hidden bg-sky-blue px-5 py-3">
       <Link href="/" className="hover:scale-105">
         <Image
           src="/trackside_cropped.png"

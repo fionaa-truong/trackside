@@ -10,7 +10,7 @@ export default function Calendar({
   location,
 }: CalendarProps) {
   return (
-    <div className="text-blue-white flex flex-row gap-8 border-b border-white/20 px-4 py-2">
+    <div className="text-blue-white flex flex-row gap-8 border-b border-white/20 px-4 py-2 md:text-sm lg:text-base">
       <span>{trackNumber}</span>
       <div className="flex flex-row gap-5">
         <span>

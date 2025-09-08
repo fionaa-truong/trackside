@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <main className="flex w-screen flex-col items-center justify-center gap-8">
       <About />
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         <TrackList />
         <CurrentInfo />
       </div>
-      <div className="grid grid-cols-3 gap-16">
+      <div className="my-5 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-5 lg:gap-16">
         <RacesCompleted />
         <DistanceCompleted />
         <LapsCompleted />
       </div>
-      <Features />
+      {/* <Features /> */}
     </main>
   );
 }
