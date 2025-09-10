@@ -1,6 +1,6 @@
 export default function RacesCompleted() {
   const totalRaces = 24;
-  const completed = 1; // TODO: make dynamic
+  const completed = 12; // TODO: make dynamic
   const percentage = completed / totalRaces;
 
   // Gauge math

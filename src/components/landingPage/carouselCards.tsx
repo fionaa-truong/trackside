@@ -1,22 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 
-interface FeatureCardsProps {
+interface CarouselCardsProps {
   imgSrc: string;
   feature: string;
   link: string;
   hoverText: string;
 }
 
-export default function FeatureCards({
+export default function CarouselCards({
   imgSrc,
   feature,
   link,
   hoverText,
-}: FeatureCardsProps) {
+}: CarouselCardsProps) {
   return (
     <Link href={link}>
-      <div className="group relative h-44 w-72 overflow-hidden rounded-xl">
+      <div className="group relative h-52 w-[350px] overflow-hidden rounded-xl">
         <Image
           src={imgSrc}
           alt={`${feature} image`}

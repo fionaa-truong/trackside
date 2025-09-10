@@ -1,6 +1,6 @@
 import About from "@/components/landingPage/about";
 import TrackList from "@/components/landingPage/trackList";
-import Features from "@/components/landingPage/features";
+import Carousel from "@/components/landingPage/carousel";
 import CurrentInfo from "@/components/landingPage/currentInfo";
 import RacesCompleted from "@/components/landingPage/racesCompleted";
 import DistanceCompleted from "@/components/landingPage/distanceCompleted";
@@ -19,7 +19,7 @@ export default function Home() {
         <DistanceCompleted />
         <LapsCompleted />
       </div>
-      {/* <Features /> */}
+      <Carousel />
     </main>
   );
 }
