@@ -10,22 +10,23 @@ export default function navbar() {
           alt="trackside logo"
           width={100}
           height={50}
+          priority
         />
       </Link>
       {/** hamburger for small screens and animate to have it coming from the right */}
       <div className="mr-2 flex flex-row items-center justify-between gap-10 lg:gap-16">
         <Link href="/">
-          <span className="hover:text-ocean-blue hover:font-semibold">
+          <span className="hover:font-semibold hover:text-ocean-blue">
             Standings
           </span>
         </Link>
-        <Link href="/" className="hover:text-ocean-blue hover:font-semibold">
+        <Link href="/" className="hover:font-semibold hover:text-ocean-blue">
           <span>Projections</span>
         </Link>
-        <Link href="/" className="hover:text-ocean-blue hover:font-semibold">
+        <Link href="/" className="hover:font-semibold hover:text-ocean-blue">
           <span>Circuit Info</span>
         </Link>
-        <Link href="/" className="hover:text-ocean-blue hover:font-semibold">
+        <Link href="/" className="hover:font-semibold hover:text-ocean-blue">
           <span>Upcoming Races</span>
         </Link>
         <Link href="/">

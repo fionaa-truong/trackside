@@ -3,7 +3,7 @@ import Calendar from "./calendar";
 
 export default function TrackList() {
   return (
-    <div className="bg-moody-grey flex w-[350px] flex-col rounded-t-lg md:h-60 md:w-[750px] md:flex-row lg:h-80 lg:w-[850px]">
+    <div className="flex w-[350px] flex-col rounded-t-lg bg-moody-grey md:h-60 md:w-[750px] md:flex-row lg:h-80 lg:w-[850px]">
       <div className="relative h-[350px] w-[350px] md:h-60 md:w-60 lg:h-80 lg:w-80">
         <Image
           src="/landingPage/senna_monaco.png"
@@ -25,7 +25,7 @@ export default function TrackList() {
           </div>
 
           <span className="mb-4 mt-[22px] text-xl text-white md:text-2xl lg:text-3xl">
-            2025 Track List
+            2026 Track List
           </span>
         </div>
         <div
@@ -60,8 +60,8 @@ export default function TrackList() {
           />
           <Calendar
             trackNumber={7}
-            circuit="Autodromo Enzo e Dino Ferrari"
-            location="Italy"
+            circuit="Circuit Gilles Villeneuve"
+            location="Canada"
           />
           <Calendar
             trackNumber={8}
@@ -75,34 +75,34 @@ export default function TrackList() {
           />
           <Calendar
             trackNumber={10}
-            circuit="Circuit Gilles Villeneuve"
-            location="Canada"
-          />
-          <Calendar
-            trackNumber={11}
             circuit="Red Bull Ring"
             location="Austria"
           />
           <Calendar
-            trackNumber={12}
+            trackNumber={11}
             circuit="Silverstone Circuit"
             location="Britain"
           />
           <Calendar
-            trackNumber={13}
+            trackNumber={12}
             circuit="Spa-Francorchamps"
             location="Belgium"
           />
-          <Calendar trackNumber={14} circuit="Hungaroring" location="Hungary" />
+          <Calendar trackNumber={13} circuit="Hungaroring" location="Hungary" />
           <Calendar
-            trackNumber={15}
+            trackNumber={14}
             circuit="Circuit Zandvoort"
             location="Netherlands"
           />
           <Calendar
-            trackNumber={16}
+            trackNumber={15}
             circuit="Autodromo Nazionale Monza"
             location="Italy"
+          />
+          <Calendar
+            trackNumber={16}
+            circuit="Circuito de Madring"
+            location="Spain"
           />
           <Calendar
             trackNumber={17}
