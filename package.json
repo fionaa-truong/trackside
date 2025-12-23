@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
     "eslint-config-prettier": "^10.1.8",
     "motion": "^12.23.12",
     "next": "15.3.4",

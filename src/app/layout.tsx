@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { McLaren } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./globals.css";
 
 const mclaren = McLaren({
@@ -32,9 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${mclaren.className} antialiased`}>
-        <div className="flex min-h-screen flex-col justify-between">
+        <div className="flex min-h-screen flex-col">
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <div className="my-8 flex-1">{children}</div>
           <Footer />
         </div>
       </body>

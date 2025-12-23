@@ -1,10 +1,10 @@
-import About from "@/components/landingPage/about";
-import TrackList from "@/components/landingPage/trackList";
-import Carousel from "@/components/landingPage/carousel";
-import CurrentInfo from "@/components/landingPage/currentInfo";
-import RacesCompleted from "@/components/landingPage/racesCompleted";
-import DistanceCompleted from "@/components/landingPage/distanceCompleted";
-import LapsCompleted from "@/components/landingPage/lapsCompleted";
+import About from "../components/landingPage/about";
+import TrackList from "../components/landingPage/trackList";
+import Carousel from "../components/landingPage/carousel";
+import CurrentInfo from "../components/landingPage/currentInfo";
+import RacesCompleted from "../components/landingPage/racesCompleted";
+import DistanceCompleted from "../components/landingPage/distanceCompleted";
+import LapsCompleted from "../components/landingPage/lapsCompleted";
 
 export default function Home() {
   return (
