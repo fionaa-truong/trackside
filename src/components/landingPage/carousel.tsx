@@ -56,7 +56,7 @@ export default function Carousel() {
 
   return (
     <div className="mb-8 flex flex-col items-center justify-center gap-5">
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-row gap-8 lg:gap-12">
         <button onClick={prevCard} className="transition hover:scale-110">
           <Image
             src="/svgs/arrow.svg"

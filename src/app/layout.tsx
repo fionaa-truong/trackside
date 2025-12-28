@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${mclaren.className} antialiased`}>
-        <div className="flex min-h-screen flex-col">
+        <div className="flex min-h-screen flex-col overflow-x-hidden">
           <Navbar />
           <div className="my-8 flex-1">{children}</div>
           <Footer />
