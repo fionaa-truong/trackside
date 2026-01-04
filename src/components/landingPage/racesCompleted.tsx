@@ -1,7 +1,8 @@
-export default function RacesCompleted() {
-  const totalRaces = 24;
-  const completed = 12; // TODO: make dynamic
-  const percentage = completed / totalRaces;
+import { getRacesCompleted } from "@/lib/stats";
+
+export default async function RacesCompleted() {
+  const { completed, total } = await getRacesCompleted(2025);
+  const percentage = completed / total;
 
   // Gauge math
   const radiusOuter = 100;
@@ -45,13 +46,13 @@ export default function RacesCompleted() {
 
   const tickInterval = 2;
   const ticks = Array.from(
-    { length: totalRaces / tickInterval + 1 },
+    { length: total / tickInterval + 1 },
     (_, i) => i * tickInterval
   );
 
   return (
     // stack for small screens and make width wider
-    <div className="bg-dusty-blue flex h-32 w-60 items-center justify-center rounded-2xl p-2">
+    <div className="flex h-32 w-60 items-center justify-center rounded-2xl bg-dusty-blue p-2">
       <svg width="260" height="140" viewBox="0 0 260 140">
         <path d="M 30 130 A 100 100 0 0 1 230 130 L 130 130 Z" fill="white" />
 
@@ -74,7 +75,7 @@ export default function RacesCompleted() {
         />
 
         {ticks.map((tick) => {
-          const tickAngle = (tick / totalRaces) * Math.PI;
+          const tickAngle = (tick / total) * Math.PI;
           const x1 = 130 + radiusOuter * Math.cos(Math.PI - tickAngle);
           const y1 = 130 - radiusOuter * Math.sin(tickAngle);
           const x2 = 130 + (radiusOuter - 10) * Math.cos(Math.PI - tickAngle);
@@ -86,7 +87,7 @@ export default function RacesCompleted() {
 
           return (
             <g key={tick}>
-              {tick !== 0 && tick !== totalRaces && (
+              {tick !== 0 && tick !== total && (
                 <line
                   x1={x1}
                   y1={y1}
@@ -114,7 +115,7 @@ export default function RacesCompleted() {
         })}
 
         <text x="130" y="100" textAnchor="middle" fontSize="28" fill="white">
-          {completed}/{totalRaces}
+          {completed}/{total}
         </text>
         <text x="130" y="120" textAnchor="middle" fontSize="16" fill="white">
           Races Completed
