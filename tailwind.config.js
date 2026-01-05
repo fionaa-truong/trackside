@@ -14,6 +14,7 @@ module.exports = {
         "blue-white": "#D1D3E5",
         "sky-blue": "#BBCFE3",
         "dusty-blue": "#BAC4DF",
+        "muted-blue": "#415D98",
         "ocean-blue": "#2F579B",
         "moody-grey": "#303030",
         "dove-grey": "#717171",
