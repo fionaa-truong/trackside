@@ -11,3 +11,4 @@ npm run dev
 ## Useful commands
 
 - `supbase db reset`: Apply changes to the database
+- `supabase start`: Start up supabase

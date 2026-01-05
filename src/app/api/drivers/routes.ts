@@ -1,7 +1,7 @@
-import { supabase } from "../../../lib/supabaseServer";
+import { supabaseAdmin } from "../../../lib/supabaseServer";
 
 export async function GET() {
-  const { data, error } = await supabase
+  const { data, error } = await supabaseAdmin
     .from("driver")
     .select("*")
     .order("name");
